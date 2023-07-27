@@ -6,7 +6,7 @@ name: weather_pkg_1
 on:
   push:
     branches: [ "main" ]
-    paths: ['weather_pkg_1']
+    paths: ['weather_pkg_1/*']
   pull_request:
     branches: [ "main" ]
     paths: ['weather_pkg_1']
