@@ -28,7 +28,7 @@ jobs:
     - name: Track location where file is changed
       run:
         files=(git diff-tree --no-commit-id --name-only -r $CI_COMMIT_SHA)
-        echo files
+        echo $files
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
